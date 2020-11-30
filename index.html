@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--
+    title...can be w/e, should probably be a location, 
+    example: instead of GReview maybe the locations name 
+  -->
+  <title>GReview</title>
+
+  <!--
+    stylesheet link for css for embed, completely 
+    unnecessary for JSON counter to work,
+    however doesn't need to be taken out though
+  -->
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <!--
+    script to a hosted version of the jquery api,
+     Jquery methods won't work without this
+    doesn't need to be changed at all
+  -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  
+  <!--
+    script containing the google-places js library
+  needs to be changed to link of word press page containing 
+  the library. Examples provided in readme
+-->
+<script src="js/google-places.js"></script>
+
+<!--
+ google api for places, doesn't need to be changed, however key needs to be updated,
+ from &key=AIzaSyCNy_ayHW3sdNi7FkYaAGbpQJFLE3XA_4M to whatever the new key is
+-->
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCNy_ayHW3sdNi7FkYaAGbpQJFLE3XA_4M&libraries=places"></script>
+
+<!--
+  Script link to the main function file,
+  needs to be changed to whatever the containing wordpress page is
+-->
+<script src="js/GR_jsoncall.js"></script>
+
+</head>
+<body>
+
+  <!--
+    container for JSON file, nested within div
+  -->
+  <pre id="userReviews"></pre>
+
+
+</body>
+</html>
